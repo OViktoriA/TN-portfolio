@@ -1,12 +1,8 @@
 {
   "files": {
     "main.css": "/TN-portfolio/static/css/main.bae88aa0.css",
-    "main.js": "/TN-portfolio/static/js/main.8e018788.js",
+    "main.js": "/TN-portfolio/static/js/main.a873efae.js",
     "static/js/453.3f1fb51b.chunk.js": "/TN-portfolio/static/js/453.3f1fb51b.chunk.js",
-    "static/media/Timeline 1.mp4": "/TN-portfolio/static/media/Timeline 1.ca488e58a6d603543f2f.mp4",
-    "static/media/Timeline 2.mp4": "/TN-portfolio/static/media/Timeline 2.29a0699ab9dd19be5feb.mp4",
-    "static/media/Clipchamp.mp4": "/TN-portfolio/static/media/Clipchamp.913654fa6b9fa7746923.mp4",
-    "static/media/video.mp4": "/TN-portfolio/static/media/video.995968c5e0fa828cbe5c.mp4",
     "static/media/foto12.jpg": "/TN-portfolio/static/media/foto12.22430a707062c1761270.jpg",
     "static/media/foto14.JPG": "/TN-portfolio/static/media/foto14.a2e8e29af571d0c1fdd3.JPG",
     "static/media/foto33.JPG": "/TN-portfolio/static/media/foto33.09bfa2c2a038b65d5e84.JPG",
@@ -19,7 +15,6 @@
     "static/media/foto34.JPG": "/TN-portfolio/static/media/foto34.f457f98a33c16c3c296a.JPG",
     "static/media/foto20.jpg": "/TN-portfolio/static/media/foto20.63f451e6782178deadc4.jpg",
     "static/media/foto9.jpg": "/TN-portfolio/static/media/foto9.36a361c9fa615f14e20c.jpg",
-    "static/media/Clipchamp 1.mp4": "/TN-portfolio/static/media/Clipchamp 1.82a9c3474da604253c3e.mp4",
     "static/media/foto6.jpg": "/TN-portfolio/static/media/foto6.ea3b8beb1290b4933785.jpg",
     "static/media/foto15.jpg": "/TN-portfolio/static/media/foto15.1ca5ef31f314d7754778.jpg",
     "static/media/foto38.JPG": "/TN-portfolio/static/media/foto38.00a9caef28cdc3b39d87.JPG",
@@ -81,11 +76,11 @@
     "static/media/Рисунок2.png": "/TN-portfolio/static/media/Рисунок2.69f97df24f8fd008f06e.png",
     "index.html": "/TN-portfolio/index.html",
     "main.bae88aa0.css.map": "/TN-portfolio/static/css/main.bae88aa0.css.map",
-    "main.8e018788.js.map": "/TN-portfolio/static/js/main.8e018788.js.map",
+    "main.a873efae.js.map": "/TN-portfolio/static/js/main.a873efae.js.map",
     "453.3f1fb51b.chunk.js.map": "/TN-portfolio/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bae88aa0.css",
-    "static/js/main.8e018788.js"
+    "static/js/main.a873efae.js"
   ]
 }
