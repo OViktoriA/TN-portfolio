@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TN-portfolio/static/css/main.bae88aa0.css",
-    "main.js": "/TN-portfolio/static/js/main.1e0ba45b.js",
+    "main.js": "/TN-portfolio/static/js/main.8e018788.js",
     "static/js/453.3f1fb51b.chunk.js": "/TN-portfolio/static/js/453.3f1fb51b.chunk.js",
     "static/media/Timeline 1.mp4": "/TN-portfolio/static/media/Timeline 1.ca488e58a6d603543f2f.mp4",
     "static/media/Timeline 2.mp4": "/TN-portfolio/static/media/Timeline 2.29a0699ab9dd19be5feb.mp4",
@@ -81,11 +81,11 @@
     "static/media/Рисунок2.png": "/TN-portfolio/static/media/Рисунок2.69f97df24f8fd008f06e.png",
     "index.html": "/TN-portfolio/index.html",
     "main.bae88aa0.css.map": "/TN-portfolio/static/css/main.bae88aa0.css.map",
-    "main.1e0ba45b.js.map": "/TN-portfolio/static/js/main.1e0ba45b.js.map",
+    "main.8e018788.js.map": "/TN-portfolio/static/js/main.8e018788.js.map",
     "453.3f1fb51b.chunk.js.map": "/TN-portfolio/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bae88aa0.css",
-    "static/js/main.1e0ba45b.js"
+    "static/js/main.8e018788.js"
   ]
 }
