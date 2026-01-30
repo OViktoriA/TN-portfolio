@@ -1,0 +1,145 @@
+/* ====== DESIGN ====== */
+.design-block {
+  background: var(--b1);
+  width: 960px;
+  height: auto;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0px auto;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
+
+.image-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Одно большое изображение */
+.viewer-image {
+  max-height: 320px;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  transition: opacity 0.4s ease;
+  justify-content: center;
+}
+
+/* Три изображения в ряд */
+.gallery-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  height: 420px;
+  border-radius: 12px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  transition: opacity 0.4s ease;
+}
+
+.duo-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.duo-image {
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  transition: opacity 0.4s ease;
+}
+
+.s7 {
+  max-width: 940px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  transition: opacity 0.4s ease;
+  justify-content: center;
+}
+.s7:first-child { margin-bottom: 20px; }
+
+.v3d {
+  max-width: 940px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  transition: opacity 0.4s ease;
+  justify-content: center;
+}
+
+/* Анимация появления */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Миниатюры + стрелки */
+.thumb-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+
+.thumb-btn {
+  background: var(--b1);
+  border: 1px solid var(--b2);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.thumb-btn:hover {
+  background: var(--b2);
+}
+
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.2s;
+  border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.thumbnail.active {
+  opacity: 1;
+  border-color: var(--b2);
+}

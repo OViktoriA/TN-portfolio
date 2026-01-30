@@ -1,0 +1,52 @@
+/* ====== VIDEO ====== */
+.video-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px 16px;
+}
+
+.video-card {
+  max-width: 1000px;
+  width: 100%;
+  background: var(--b1);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--b2);
+  box-shadow: var(--sh);
+  text-align: center;
+}
+
+.video-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.video-item h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.video-player {
+  width: 60%;
+  border-radius: 12px;
+  border: 1px solid var(--b2);
+  display: block;
+  margin: 0 auto;
+}
+
+.video-desc {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--tx2);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--b2);
+}
+
+.video-desc:last-child { 
+  border-bottom: none; 
+  padding-bottom: 0; 
+}

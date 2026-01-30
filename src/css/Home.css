@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Podkova";
+  src: url("../fonts/Podkova.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.top-banner {
+  padding: 20px 60px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Каждая строка — отдельный блок с фоном */
+.banner-line {
+  padding: 20px;
+  border-radius: 4px 4px 10px 10px;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+
+/* Заголовок внутри */
+.banner-line h1 {
+  margin: 0;
+  font-family: "Podkova", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  background: linear-gradient(60deg, #010b21, #08374b, #011124, #0d3c50, #011124);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+@media (max-width: 840px) {
+  .banner-line {
+    align-self: center;
+    text-align: center;
+  }
+
+  .banner-line h1 {
+    font-size: 42px;
+  }
+}
+
+
+
+/* === SHOWCASE === */
+.showcase {
+  max-width: 1080px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 0 16px;
+      text-align: center;
+}
+
+@media (max-width: 840px) {
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Общий стиль блока */
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.4);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 20px 40px rgba(15,23,42,0.18),
+    0 0 40px rgba(255,255,255,0.4) inset;
+  transition: 0.3s ease;
+}
+
+.block:hover {
+  transform: translateY(-4px);
+}
+
+/* Анимация появления */
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Применяем к карточкам */
+.block {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.8s ease;
+}
+
+.block.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Лёгкая задержка для ритма */
+.block:nth-child(1) { animation-delay: 0.1s; }
+.block:nth-child(2) { animation-delay: 0.2s; }
+.block:nth-child(3) { animation-delay: 0.3s; }
+.block:nth-child(4) { animation-delay: 0.4s; }
+
+/* Декоративное свечение */
+.block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /*background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255,255,255,0.45),
+    transparent 60%
+  );*/
+  border-radius: inherit;     /* ← скругляет ::before */
+  pointer-events: none;
+}
+
+
+.b-top img,
+.b-top video {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.5);
+  object-fit: cover;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  margin-bottom: 20px;
+}
+
+/* Увеличение при наведении */
+.block:hover .b-top img,
+.block:hover .b-top video {
+  transform: scale(1.04);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.25);
+}
+
+
+.b-bottom h2 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  font-weight: 700;
+
+}
+
+.b-bottom p {
+  margin: 0 0 14px;
+  color: var(--tx2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.b-bottom ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--tx2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* Индивидуальные акценты */
+.photo  { background: rgba(255,255,255,0.7); }
+.design { background: rgba(255,255,255,0.7); }
+.video  { background: rgba(255,255,255,0.7); }
+.dev    { background: rgba(255,255,255,0.7); }
+
+/* Мобильная адаптация */
+@media (max-width: 840px) {
+  .block {
+    grid-template-columns: 1fr;
+    padding: 26px;
+  }
+}
+
+/* === КОНТАКТНАЯ ПЛАШКА === */
+.contact-banner {
+  max-width: 1060px;
+  margin: 40px auto 20px;
+  padding: 20px 20px;
+  text-align: center;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(18px);
+  border-radius: 26px;
+  box-shadow: 0 20px 40px rgba(15,23,42,0.12);
+}
+
+.contact-banner h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+    font-family: "Podkova", sans-serif;
+}
+
+/* Контейнер — в один ряд */
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* расстояние между элементами */
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* чтобы на маленьких экранах красиво переносилось */
+}
+
+/* Один контакт */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 17px;
+  color: var(--tx2);
+  padding: 10px 16px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  white-space: nowrap; /* чтобы не ломались строки */
+}
+
+/* Иконка */
+.contact-item .icon {
+  font-size: 20px;
+}
+
+
+/* Кнопка */
+.contact-btn {
+  padding: 12px 26px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 2px 18px rgba(37,99,235,0.35);
+  transition: 0.25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37,99,235,0.45);
+}
+
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 166px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover‑эффект для маленьких фото */
+.block:hover .photo-grid img {
+  transform: scale(1.03);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.22);
+}

@@ -1,0 +1,84 @@
+/* NIGHT MODE BULB */
+.lamp.night .bulb {
+  background: radial-gradient(circle at 30% 20%, #fefce8, #facc15);
+  box-shadow: 0 0 18px rgba(250,204,21,0.9);
+  border-color: #facc15;
+}
+
+.lamp.night .fil {
+  border-color: #eab308;
+}
+
+body.night .hdr { 
+  background: rgba(0, 0, 0, 0.1); 
+} 
+
+body.night .lnk, 
+body.night .btn { 
+  color: #fff; 
+  background: transparent; 
+  border-color: transparent; 
+} 
+
+body.night .logo span { 
+  color: #fff; 
+} 
+
+body.night .mark-plain { 
+  background: #000; 
+  border: 1px solid #fff; 
+}
+
+body.night .resume-card {
+  background: rgba(255,255,255,0.7);
+}
+
+body.night .resume-block {
+  border-color: var(--b3);
+}
+
+body.night .resume-photo {
+  border-color: var(--b3);
+}
+
+body.night .video-card {
+  background: rgba(255,255,255,0.7);
+}
+
+body.night .unity-card {
+  background: rgba(255,255,255,0.7);
+}
+
+body.night .video-desc{
+    border-color: var(--b3);
+}
+
+body.night .design-block {
+    background: rgba(255,255,255,0.7);
+}
+
+body.night .foto-block {
+    background: rgba(255,255,255,0.7);
+}
+
+body.night .lnk:hover,
+body.night .btn:hover, 
+body.night .item:hover{
+  background: var(--b4);
+  border-color: var(--b4);
+  color: var(--b1);
+  transform: translateY(-1px);
+}
+
+body.night .list{
+  background: var(--b5);
+  border: 1px solid var(--b4);
+}
+
+body.night .item{
+  color: var(--b1);
+}
+
+body.night .ftr{
+  color: var(--b1);
+}
