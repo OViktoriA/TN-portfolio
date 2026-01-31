@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <script>
+      // Сохраняем путь, который пользователь обновил
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
+    </script>
+
+    <!-- Перенаправляем на корень приложения -->
     <meta http-equiv="refresh" content="0; URL=/TN-portfolio/" />
   </head>
   <body></body>
